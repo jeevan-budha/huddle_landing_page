@@ -38,7 +38,7 @@
   </div>
 
   <section class="card-container">
-    <div class="card">
+    <div class="card card-icon">
       <div class="card-text">
         <h2>Grow Together</h2>
         <p>Generate meaningful dicussions with your audience and build a strong, loyal community. Thick of
@@ -58,7 +58,7 @@
       </div>
     </div>
 
-    <div class="card">
+    <div class="card card-icon">
       <div class="card-text">
         <h2>Your Users</h2>
         <p>It takes no time at all to integrate Huddle with your app's authentication solution. This means, once
@@ -117,8 +117,19 @@
         @Copyrigth 2025 Huddle. All right reserved.
       </div>
     </section>
-
   </footer>
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script>
+    ScrollReveal().reveal('.navbar', { delay: 200, duration: 2000, origin: 'top', distance: '50px' });
+    ScrollReveal().reveal('.section-container', { delay: 200, duration: 2000, origin: 'top', distance: '50px' });
+    ScrollReveal().reveal('.card', { delay: 300, duration: 2000, origin: 'left', distance: '60px', interval: 200 });
+    ScrollReveal().reveal('.card-icon', { delay: 300, duration: 2000, origin: 'right', distance: '60px', interval: 200 });
+    ScrollReveal().reveal('.small-card', { delay: 400, duration: 2000, origin: 'bottom', distance: '40px' });
+    ScrollReveal().reveal('.footer-container', { delay: 500, duration: 2000, origin: 'top', distance: '40px' });
+    ScrollReveal().reveal('.copyright', { delay: 500, duration: 2000, origin: 'right', distance: '40px' });
+  </script>
+
 </body>
 
 </html>

@@ -180,19 +180,19 @@ body {
 
 footer {
   background-color: var(--Very-Dark-Cyan);
-  height: 60vh;
+  height: 70vh;
 }
 
 .footer-container {
   position: relative;
   top: 5rem;
-  /* background-color: var(--Very-Dark-Cyan); */
   color: #ffffff;
   font-family: var(--body--font-family);
   font-size: 13px;
   display: flex;
   align-items: center;
   justify-content: space-around;
+  background: var(--Very-Dark-Cyan);
 }
 
 .logo-img {
@@ -204,7 +204,6 @@ footer {
 
 .first-div-container-child {
   width: 15rem;
-  /* background-color: rebeccapurple; */
 }
 
 .location-text {
@@ -262,4 +261,113 @@ footer {
   font-size: 13px;
   text-align: right;
   padding-right: 3rem;
+}
+
+@media (max-width:976px) {
+  .section-container {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+@media (max-width:651px) {
+  .container {
+    background-image: url(./images/bg-hero-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .card {
+    flex-direction: column;
+    height: auto;
+    padding-block: 3rem;
+
+  }
+
+  .card img {
+    padding-bottom: 3.5rem;
+  }
+
+  .card-icon {
+    flex-direction: column-reverse;
+  }
+}
+
+@media (max-width:637px) {
+  .section-container img {
+    width: 30rem;
+  }
+
+  .small-card {
+    max-width: 480px;
+  }
+
+  .small-card h2 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width:554px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: self-start;
+    margin-left: 2rem;
+  }
+
+  footer {
+    height: 90vh;
+  }
+
+  .fourth-div-container {
+    margin-top: 2rem;
+  }
+
+  .copyright {
+    text-align: start;
+    padding-left: 2rem;
+  }
+}
+
+@media (max-width:488px) {
+  .section-container {
+    justify-content: center;
+  }
+
+  .section-container img {
+    width: 25rem;
+  }
+
+  .small-card {
+    max-width: 400px;
+  }
+
+  .small-card h2 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width:422px) {
+  .section-container img {
+    width: 20rem;
+  }
+
+  .small-card {
+    max-width: 330px;
+  }
+
+  .small-card h2 {
+    font-size: 15px;
+  }
+}
+
+@media (max-width:387px) {
+  .tryitfreebtn {
+
+    padding: 0.6em 2.5em;
+  }
+
+  footer {
+    height: 95vh;
+  }
 }
